@@ -87,7 +87,6 @@ export default function(gulp, plugins, args, config, taskTarget, browserSync) {
       if (err) {
         done(err);
       }
-
       return browserifyTask(files);
     });
   });

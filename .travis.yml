@@ -1,15 +1,17 @@
-language: ruby
+language: node_js
 rvm:
-  - 2.2
+  - 5.1
 
-install: npm install
+before_install:
+  - npm install -g gulp
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=99.0
+
 script: gulp test
 
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-
-cache: bundler
 
 notifications:
   email: false

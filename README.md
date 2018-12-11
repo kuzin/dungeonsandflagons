@@ -1,4 +1,6 @@
-## Dungeons & Flagons [![Build Status](https://travis-ci.org/kuzin/dungeonsandflagons.svg?branch=master)](https://travis-ci.org/kuzin/dungeonsandflagons)
+## Dungeons & Flagons
+
+[![Build Status](https://travis-ci.org/kuzin/dungeonsandflagons.svg?branch=master)](https://travis-ci.org/kuzin/dungeonsandflagons)
 
 JavaScript
 - [Browserify](http://browserify.org/) with ES6/2015 support through [Babel](https://babeljs.io/)

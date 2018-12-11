@@ -10,20 +10,40 @@ doctype html
 head
   meta(charset='utf-8')
   meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-  title dnf
+  title Dungeons & Flagons
+  
+  //- Normal Meta
   meta(name='description', content= 'A new Yeogurt application')
   meta(name='viewport', content='width=device-width, initial-scale=1.0')
+  
+  //- Tiles
+  meta(name='msapplication-TileColor', content='#232527')
+  meta(name='theme-color', content='#ffffff')
+  
+  //- Open Graph
+  meta(property="og:title", content="Dungeons &amp; Flagons")
+  meta(property="og:type", content="website")
+  meta(property="og:url", content="https://dungeonsandflagons.org")
+  meta(property="og:image", content="https://dungeonsandflagons.org/opengraph.png")
+  meta(property="og:description", content="A Roll20 Tabletop Gaming Discord Community")
+  meta(property="og:site_name", content="Dungeons &amp; Flagons")
+  
+  //- Manifest
+  link(rel='manifest', href='/site.webmanifest')
+  
+  //- Icons
+  link(rel='icon', type='image/png', sizes='32x32', href='/favicon-32x32.png')
+  link(rel='icon', type='image/png', sizes='16x16', href='/favicon-16x16.png')
+  link(rel='apple-touch-icon', sizes='180x180', href='/apple-touch-icon.png')
+  
+  //- Styles
   block stylesheets
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css')
     link(rel='stylesheet', href= baseUrl + 'styles/main.css')
 
 body
-  <!--[if lt IE 11]>
-  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/'>upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
 
   block content
 
   block scripts
     script(src= baseUrl + 'scripts/main.js')
-
-</html>
